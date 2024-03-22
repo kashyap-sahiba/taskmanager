@@ -54,4 +54,10 @@ public class TaskController {
         taskService.deleteTask(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+
+    //Security
+    @GetMapping("/welcome")
+    public String sayWelcome(){
+        return "Welcome!";
+    }
 }
